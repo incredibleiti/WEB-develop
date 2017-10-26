@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" content="width=device-width, inital-scale = 1" />
+    <title>Color Coding Example</title>
+    <link rel="stylesheet" href="CSS/ColorTextStyle1.css">
+    <script type="text/javascript" src="JS/ColorText.js"></script>
+</head>
+<body>
+    <h1> Color the Paragraph Text</h1>
+    <table style="width:100%">
+        <tr>
+            <td style="width:5%"></td>
+            <td style="width:50%">
+                <textarea id="userInput" oninput="ChangeCSSValidButton()"></textarea> 
+            </td>
+            <td></td>
+            <td >
+                <button id="btnValidate" class="valbutton" onclick="ValidateColors()">Validate</button>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td></td>
+        </tr>
+        <tr>
+            <td style="width:5%"></td>
+            <td colspan="2">
+                <button id="btnClear" class="button" onclick="Clear1()">Clear text above</button>
+                <button id="btnColorApply" class="button" onclick="ApplyColor1()">Apply Colors Below</button>
+            </td>
+            <td>
+            </td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <td style="width:5%"></td>
+            <td>
+                <h3>Paragraph</h3>
+            </td>
+            <td>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+        <tr>
+            <td style="width:5%"></td>
+            
+            <td colspan="2">
+                <p id="paragraph">
+                    This is a dummy paragraph to test the color implementation.
+                </p>
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td style="width:5%"></td>
+            <td>
+                <button class="button" onclick="Reset()">Click to Reset</button>
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <div id="mydiv"></div>
+</body>
+</html>
